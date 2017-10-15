@@ -27,7 +27,7 @@
                     <div class="page-heading">
                         <h1>GEAR</h1>
                         <hr class="small">
-                        <span class="page-subheading">GEometric ARtist</span>
+                        <span class="page-subheading">GEometry ARtist</span>
                     </div>
                 </div>
             </div>
@@ -44,7 +44,7 @@
             <div class="col-lg-4 col-md-4">
                 <textarea id="mycommands" rows="20" cols="40"></textarea>
                 <br>
-                <button type="button" onclick="myFunction()">Try it</button>
+                <button type="button" onclick="eulerline()">欧拉线</button>
                 <button id="btn1">刷新</button>
             </div>
         </div>
@@ -55,8 +55,8 @@
     <!-- <script src="./js/euler-line.js"></script> -->
     <!-- <script src="./js/five-circle.js"></script> -->
     <script>
-        function myFunction() {
-            document.getElementById("mycommands").value = "This is for test";
+        function eulerline() {
+            document.getElementById("mycommands").value = "!function(){var e,r,o,t,a=JXG.JSXGraph.initBoard('box2',{boundingbox:[-1.5,2,1.5,-1],keepaspectratio:!0,axis:!1,showNavigation:!1,showCopyright:!1}),i={strokeColor:'#901B77',fillColor:'#CA147A'},n={strokeColor:'#009256',fillColor:'#65B72E',visible:!0,withLabel:!0},c={strokeColor:'black',dash:1,strokeWidth:1,point:JXG.deepCopy(i,{visible:!0,withLabel:!0})},s={strokeWidth:1,strokeColor:'#333333',dash:2},l=a.create('point',[1,0],i),p=a.create('point',[-1,0],i),d=a.create('point',[.2,1.5],i),m=a.create('polygon',[l,p,d],{fillColor:'#FFFF00',lines:{strokeWidth:2,strokeColor:'#009256'}});c.point.name='H_c',e=a.create('perpendicular',[m.borders[0],d],c),c.point.name='H_a',r=a.create('perpendicular',[m.borders[1],l],c),c.point.name='H_b',o=a.create('perpendicular',[m.borders[2],p],c),n.name='H',t=a.create('intersection',[e,o,0],n);var h,k,b;i.name='M_c',h=a.create('midpoint',[l,p],i),i.name='M_a',k=a.create('midpoint',[p,d],i),i.name='M_b',b=a.create('midpoint',[d,l],i);var C,v,g,u;C=a.create('segment',[k,l],s),v=a.create('segment',[b,p],s),g=a.create('segment',[h,d],s),n.name='S',u=a.create('intersection',[C,g,0],n);var _;n.name='U',_=a.create('circumcircle',[l,p,d],{strokeColor:'#000000',dash:3,strokeWidth:1,point:n});var W;W=a.create('line',[t,u],{strokeWidth:2,strokeColor:'#901B77'}),a.update()}();";
         }
     </script>
 

@@ -14,11 +14,11 @@
         j = [],
         k;
 
-    p[0] = board.create('point', [-2.5, -3], { name: '', strokeColor: '#7355ff', fillColor: '#7355ff' });
-    p[1] = board.create('point', [-0, 4], { name: '', strokeColor: '#7355ff', fillColor: '#7355ff' });
-    p[2] = board.create('point', [2.5, -3], { name: '', strokeColor: '#7355ff', fillColor: '#7355ff' });
-    p[3] = board.create('point', [-4, 0], { name: '', strokeColor: '#7355ff', fillColor: '#7355ff' });
-    p[4] = board.create('point', [4, 0], { name: '', strokeColor: '#7355ff', fillColor: '#7355ff' });
+    p[0] = board.create('point', [-2.5, -3], { name: 'A', strokeColor: '#7355ff', fillColor: '#7355ff' });
+    p[1] = board.create('point', [-0, 4], { name: 'B', strokeColor: '#7355ff', fillColor: '#7355ff' });
+    p[2] = board.create('point', [2.5, -3], { name: 'C', strokeColor: '#7355ff', fillColor: '#7355ff' });
+    p[3] = board.create('point', [-4, 0], { name: 'D', strokeColor: '#7355ff', fillColor: '#7355ff' });
+    p[4] = board.create('point', [4, 0], { name: 'E', strokeColor: '#7355ff', fillColor: '#7355ff' });
 
     for (k = 0; k < 5; k++) {
         l[k] = board.create('segment', [p[k], p[(k + 1) % 5]], { strokeColor: 'black', strokeWidth: 1 });

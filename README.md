@@ -1,6 +1,6 @@
 # What is GEAR?
 
-**GEAR** stands for **GE**ometric **AR**tist
+**GEAR** stands for **GE**ometry **AR**tist
 
 Demo: [GEAR 0.1](https://rawgit.com/Hansimov/gear/master/gear-0.1.html).
 
