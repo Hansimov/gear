@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!-- saved from: http://jsxgraph.uni-bayreuth.de/wp/index.html -->
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>GEAR</title>
+    <script src="./js/jsxgraphcore.js"></script>
+    <script src="./js/jquery.js"></script>
+
+    <!-- <link rel="stylesheet" href="./JSXGraph - JSXGraph_files/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/mystyle.css" type="text/css" />
+
+    <!-- <link rel="stylesheet" href="./JSXGraph - JSXGraph_files/css"> -->
+    <!--link rel="stylesheet" href="/css/index.css" />-->
+
+</head>
+
+<body>
+
+    <div role="main" class="container main-content">
+        <header class="header-page">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="page-heading">
+                        <h1>GEAR</h1>
+                        <hr class="small">
+                        <span class="page-subheading">GEometry ARtist</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+
+        <div class="row">
+            <div class="col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1">
+
+                <div id="box2" class="jxgbox" style="width: 400px; height: 400px; user-select: none; overflow: hidden; position: relative;">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-4">
+                <textarea id="mycommands" rows="20" cols="40"></textarea>
+                <br>
+                <button type="button" onclick="myFunction()">Try it</button>
+                <button id="btn1">刷新</button>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <!-- <script src="./js/euler-line.js"></script> -->
+    <!-- <script src="./js/five-circle.js"></script> -->
+    <script>
+        function myFunction() {
+            document.getElementById("mycommands").value = "This is for test";
+        }
+    </script>
+
+    <script>
+    $(document).ready(function(){
+        $("#btn1").click(function(){
+            // console.log("Text: " + $("#mycommands").val());
+            eval($("#mycommands").val());
+        });
+    });
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
